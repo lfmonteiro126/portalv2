@@ -1,0 +1,110 @@
+/* ── Windows Log Portal – Dark Theme ─────────────────────────────── */
+
+[data-testid="stAppViewContainer"] {
+    background-color: #0F0F1A;
+}
+
+[data-testid="stSidebar"] {
+    background-color: #1A1A2E;
+    border-right: 1px solid #2D2D44;
+}
+
+.main-header {
+    background: linear-gradient(135deg, #1A1A2E 0%, #16213E 50%, #0F3460 100%);
+    padding: 1.5rem 2rem;
+    border-radius: 12px;
+    border: 1px solid #2D2D44;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.main-header h1 {
+    color: #E0E0FF;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.main-header p {
+    color: #8888BB;
+    margin: 0.3rem 0 0 0;
+    font-size: 0.95rem;
+}
+
+.metric-card {
+    background: #1E1E2E;
+    border: 1px solid #2D2D44;
+    border-radius: 10px;
+    padding: 1rem 1.2rem;
+    text-align: center;
+    transition: border-color 0.2s;
+}
+
+.metric-card:hover { border-color: #4C6EF5; }
+
+.metric-card .value {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.metric-card .label {
+    color: #8888BB;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 0.2rem;
+}
+
+.incident-card {
+    background: #1E1E2E;
+    border-left: 4px solid #FF4B4B;
+    border-radius: 8px;
+    padding: 1rem 1.2rem;
+    margin-bottom: 0.8rem;
+}
+
+.incident-card.error  { border-left-color: #FF8C00; }
+.incident-card.warning { border-left-color: #FFD700; }
+.incident-card.info   { border-left-color: #4CAF50; }
+
+.kb-card {
+    background: #1E1E2E;
+    border: 1px solid #2D2D44;
+    border-radius: 10px;
+    padding: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.badge {
+    display: inline-block;
+    padding: 0.2rem 0.6rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.badge-critical { background: #FF4B4B22; color: #FF4B4B; border: 1px solid #FF4B4B55; }
+.badge-error    { background: #FF8C0022; color: #FF8C00; border: 1px solid #FF8C0055; }
+.badge-warning  { background: #FFD70022; color: #FFD700; border: 1px solid #FFD70055; }
+.badge-info     { background: #4CAF5022; color: #4CAF50; border: 1px solid #4CAF5055; }
+
+.ps-block {
+    background: #0D1117;
+    border: 1px solid #30363D;
+    border-radius: 8px;
+    padding: 0.8rem 1rem;
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 0.82rem;
+    color: #79C0FF;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    word-break: break-all;
+}
+
+.stDataFrame { border-radius: 8px; overflow: hidden; }
+
+div[data-testid="stMetricValue"] { font-size: 1.8rem !important; }
